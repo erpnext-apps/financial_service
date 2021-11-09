@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include financial_service *.css
+recursive-include financial_service *.csv
+recursive-include financial_service *.html
+recursive-include financial_service *.ico
+recursive-include financial_service *.js
+recursive-include financial_service *.json
+recursive-include financial_service *.md
+recursive-include financial_service *.png
+recursive-include financial_service *.py
+recursive-include financial_service *.svg
+recursive-include financial_service *.txt
+recursive-exclude financial_service *.pyc

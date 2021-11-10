@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "creation": "2021-11-09 18:01:42.057070",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "submit_document",
+  "company",
+  "warehouse",
+  "column_break_2",
+  "status",
+  "job_type",
+  "section",
+  "docs",
+  "response",
+  "error",
+  "callback_url",
+  "callback_headers",
+  "section_break_12",
+  "started_at",
+  "ended_at",
+  "time_taken",
+  "column_break_16",
+  "success",
+  "failure",
+  "total",
+  "section_break_20",
+  "errors"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_document",
+   "fieldtype": "Check",
+   "label": "Submit Document"
+  },
+  {
+   "depends_on": "company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nIn Progress\nSuccessful - Callback Pending\nPartially Success - Callback Pending\nFailure - Callback Pending\nSuccessful - Callback Success\nPartially Success - Callback Success\nFailure - Callback Success\nSuccessful - Callback Failed\nPartially Success - Callback Failed\nFailure - Callback Failed\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "INSERT\nUPDATE\nDELETE"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section",
+   "fieldtype": "Section Break",
+   "label": "Data"
+  },
+  {
+   "fieldname": "docs",
+   "fieldtype": "Code",
+   "label": "docs",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Code",
+   "label": "Response",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Small Text",
+   "label": "Error",
+   "read_only": 1
+  },
+  {
+   "fieldname": "callback_url",
+   "fieldtype": "Data",
+   "label": "Callback URL"
+  },
+  {
+   "fieldname": "callback_headers",
+   "fieldtype": "Code",
+   "label": "Callback Headers",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "started_at",
+   "fieldtype": "Datetime",
+   "label": "Started At"
+  },
+  {
+   "fieldname": "ended_at",
+   "fieldtype": "Data",
+   "label": "Ended At"
+  },
+  {
+   "fieldname": "time_taken",
+   "fieldtype": "Data",
+   "label": "Time Taken"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "success",
+   "fieldtype": "Int",
+   "label": "Success"
+  },
+  {
+   "fieldname": "failure",
+   "fieldtype": "Int",
+   "label": "Failure"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "errors",
+   "fieldtype": "Table",
+   "label": "Errors",
+   "options": "API Job Error"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-09 18:01:42.057070",
+ "modified_by": "Administrator",
+ "module": "Financial Service",
+ "name": "API Job",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

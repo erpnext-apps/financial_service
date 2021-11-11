@@ -4,4 +4,4 @@ Manages API Request queuing
 
 #### License
 
-MIT
+GNU GPL v3.0
